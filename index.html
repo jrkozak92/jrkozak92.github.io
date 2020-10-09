@@ -42,6 +42,22 @@
             margin:auto;
             vertical-align:middle;
         }
+
+        .blurb{
+            font-family: 'Roboto', sans-serif;
+            font-size:2vw;
+            text-align:center;
+            padding:20px;
+            max-width:70vw;
+            border:1px solid white;
+            border-radius:5px;
+        }
+
+        @media screen and (max-width:680px) {
+            .blurb{
+                max-width:90vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -49,9 +65,12 @@
         <h1>
             Welcome!
         </h1>
+        <p class="blurb">
+            All content on this website has been produced and deployed by Joey Kozak. This is a representation of work-in-progress full stack applications using a variety of technologies. Many of these technologies require the latest version of a modern browser to operate as expected, so please don't use Internet Explorer.
+        </p>
         <a href="./public/index.html">
             <h2>
-                Click here to enter the site.
+                Come on in!
             </h2>
         </a>
     </div>
