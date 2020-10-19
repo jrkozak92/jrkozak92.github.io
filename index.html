@@ -13,12 +13,12 @@
             display:grid;
             grid-template-rows: auto 33% auto;
             grid-template-areas:
-                'header'
-                'main'
-                'footer';
+                'welcome'
+                'blurb'
+                'entry';
         }
 
-        .entry{
+        .welcome{
             grid-area:main;
             color:white;
             text-shadow:1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
@@ -31,7 +31,7 @@
             margin:auto;
         }
 
-        a{
+        .entry{
             color:white;
             text-shadow:1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
             font-family: 'Roboto', sans-serif;
@@ -52,6 +52,7 @@
             border:1px solid white;
             border-radius:5px;
             margin:auto;
+            background-color:rgba(235,235,235,.7);
         }
 
         @media screen and (max-width:680px) {
@@ -62,14 +63,14 @@
     </style>
 </head>
 <body>
-    <div class="entry">
+    <div class="welcome">
         <h1>
             Welcome!
         </h1>
         <p class="blurb">
-            All content on this website has been produced and deployed by Joey Kozak. This is a representation of work-in-progress full stack applications using a variety of technologies. Many of these technologies require the latest version of a modern browser to operate as expected, so please don't use Internet Explorer.
+            Joey Kozak is the sole contributor on all content and projects found on this website. It is meant to serve as a work-in-progress portfolio of full stack applications using a variety of technologies.
         </p>
-        <a href="./public/index.html">
+        <a class="entry" href="./public/index.html">
             <h2>
                 Come on in!
             </h2>
