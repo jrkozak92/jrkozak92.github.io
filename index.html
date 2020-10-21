@@ -6,10 +6,22 @@
             padding:0;
         }
 
+        html{
+            font-size: calc( 18px + (22 - 18)*(100vw - 400px)/(800 - 400));
+        }
+
         body{
             background-image:url('/src/assets/IMG_0571.JPG');
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        h4{
+            padding:10px 0px 10px 0px;
+        }
+
+        p{
+            padding:10px 0px 10px 0px;
         }
 
         .container{
@@ -31,14 +43,14 @@
             text-shadow:1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
             font-family: 'Roboto', sans-serif;
             font-weight:bold;
-            font-size:8vw;
+            font-size:3em;
             text-align:center;
             margin:auto;
             transition: font-size .7s;
         }
 
         .welcome:hover{
-            font-size: 8.12vw;
+            font-size: 3.1em;
             cursor:default;
             transition: font-size .7s;
         }
@@ -50,7 +62,7 @@
             text-shadow:1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
             font-family: 'Roboto', sans-serif;
             font-weight:bold;
-            font-size:4vw;
+            font-size:1.75em;
             text-align:center;
             text-decoration:underline;
             margin:auto;
@@ -61,8 +73,7 @@
         }
 
         .entry:hover{
-            text-decoration:none;
-            text-shadow: .25vw .25vw dimgrey, -1px 1px black, 1px -1px black, -1px -1px black;;
+            text-shadow: .1em .1em dimgrey, -1px 1px black, 1px -1px black, -1px -1px black;;
             cursor:pointer;
             outline:none;
             background-color:rgba(235,235,235,.7);
@@ -75,7 +86,7 @@
             grid-area:main;
             color:white;
             font-family: 'Roboto', sans-serif;
-            font-size:2vw;
+            font-size:.75em;
             text-align:left;
             max-width:70vw;
             border:1px solid white;
@@ -83,18 +94,19 @@
             margin:auto;
             padding:2vw;
             background-color:rgba(235,235,235,.7);
+            text-shadow: .25px .25px black, -.25px .25px black, .25px -.25px black, -.25px -.25px black;
             transition: text-shadow .7s;
         }
 
         .blurb:hover{
-            text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;;
+            text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
             text-decoration:none;
             transition: text-shadow .7s;
         }
 
         @media screen and (max-width:680px) {
             .blurb{
-                max-width:90vw;
+                max-width:80vw;
             }
         }
     </style>
