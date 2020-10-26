@@ -3,3 +3,7 @@ module.exports = {
         port: 8081
     }
 }
+
+module.exports = {
+    publicPath: '/site-manager/'
+}
