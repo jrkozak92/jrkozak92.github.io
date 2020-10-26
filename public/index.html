@@ -7,92 +7,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <!-- This is the overarching style tag for the app -->
-    <style>
-      *{
-        margin:0;
-        padding:0;
-      }
-
-
-      body{
-            background-image:url('../src/assets/IMG_0087.JPG');
-            background-repeat: no-repeat;
-            background-size: cover;
-      }
-
-      .navbar{
-        position:relative;
-        padding:10px 10px 0px 10px;
-        margin:10px;
-        margin-bottom:0;
-      }
-
-      .navbutton{
-        padding:10px;
-        font-size:3vw;
-        font-family: 'Roboto', sans-serif;
-        text-align:center;
-        border: 1px solid black;
-        border-bottom:1px solid lightgrey;
-        z-index:5;
-        position:relative;
-        top:1px;
-      }
-
-      .navbutton.hover{
-        cursor:pointer;
-        font-weight:bold;
-        text-shadow: 1px -1px black;
-        background-color:lightgrey;
-      }
-
-      .top{
-        color:white;
-        background-color:black;
-        font-family: 'Roboto', sans-serif;
-        font-size:4vw;
-        font-weight:bold;
-        padding:10px;
-        border-radius:7px;
-        position:relative;
-        top:-5px;
-        left:-5px;;
-      }
-
-      .navlink{
-        text-decoration:underline;        
-      }
-      .navlink:hover{
-        text-decoration:underline dotted;
-      }
-
-      .navlink:active{
-        text-decoration:underline overline dotted;
-      }
-
-      .navlink:visited{
-        color:black;
-      }
-
-      .container{
-        background-color: rgba(235,235,235,.5) ;
-        font-family: 'Roboto', sans-serif;
-        text-align:center;
-        width:80vw;
-        margin:auto;
-        border: 1px solid black;
-        border-radius:5px;
-        z-index:2;
-      }
-
-      .component{
-        text-align:center;
-        padding:10px 0 10px 0;
-        width:90%;
-        margin:auto;
-      }
-    </style>
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body, html {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+      }
+  </style>
   </head>
   <body>
     <noscript>
